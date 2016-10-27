@@ -1,6 +1,11 @@
+function main() {
+    var n_temp = readLine().split(' ');
+    var n = parseInt(n_temp[0]);
+    var k = parseInt(n_temp[1]);
+    c = readLine().split(' ');
+    c = c.map(Number);
 
-
-var energy=100;
+    var energy=100;
     for(var i=0;i<n;i+=k){
         if(c[i]==0)
             energy--;
@@ -8,3 +13,5 @@ var energy=100;
             energy-=3;
     }
     console.log(energy);
+
+}
